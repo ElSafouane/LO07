@@ -1,0 +1,69 @@
+h1{
+    color: navy;
+    margin-top: 20px ;
+    margin-bottom: 20px;
+    text-align: center;
+}
+h2{
+    color: red;
+}
+a:visited{
+    color: orange;
+}
+a:hover{
+    background: greenyellow;
+}
+ol{
+    color: chocolate;
+}
+
+.cs{
+    color: crimson;
+}
+
+.tm{
+    color: blueviolet;
+}
+li{
+    color: cornflowerblue;
+}
+
+#nom{
+    text-decoration: underline;
+}
+
+ol li{
+    list-style: lower-greek;
+}
+
+.gras{
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+#matiere{
+    background: salmon;
+    display: none;
+}
+
+th{
+    padding: 1em;
+    background: cadetblue;
+    color: darkslateblue;
+}
+td{
+    padding: 0.5em;
+    text-align: center;
+    background: salmon;
+}
+.colonne{
+    background: cadetblue;
+    font-weight: bold;
+    color: darkslateblue;
+}
+
+table{
+    margin: auto;
+    border-color: black;
+    border-collapse: collapse;
+}
