@@ -1,0 +1,17 @@
+body{
+    padding-top: 80px;
+    background: lemonchiffon;
+}
+.container{
+    width: 90%;
+}
+.panel-heading, h4{
+    font-weight: bold;
+}
+.panel{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.col-lg-4 img{
+    width: 100%;
+}
