@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta charset="UTF-8">
+	<title>TP04 POST</title>
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="my_css.css">
+</head>
+<body>
+<div class="container">
+	<div class="panel panel-success">
+		<div class="panel-heading">
+			Exercice 3: Traitement PHP du formulaire de contact (méthode POST)
+		</div>
+		<div class="panel-body">
+			<form method="post" action="lo07_analyse_formulaire.php">
+				<div class="form-group">
+					<label for="nom">Nom ?</label>
+					<input type="text" class="form-control" id="nom" name="nom" placeholder="Donnez votre nom" value="LEMERCIER">
+				</div>
+				<div class="form-group">
+					<label for="prenom">Prénom ?</label>
+					<input type="text" class="form-control" id="prenom" name="prenom" placeholder="Donnez votre prénom" value="Marc">
+				</div>
+				<div class="form-group">
+					<label for="mail">Email ?</label>
+					<input type="email" class="form-control" id="mail" name="mail" placeholder="Donnez votre Email" value="example@mail.fr">
+				</div>
+				<div class="form-group">
+					<label for="date">Date de naissance ?</label>
+					<input type="date" class="form-control" id="date" name="date" placeholder="" value="2002-02-21">
+				</div>
+				<div class="form-group">
+					<label for="sexe" class="control-label"> Sexe ?</label>
+					<div class="radio">
+						<label>
+							<input type="radio" name="radio" value="Homme" checked="checked"> Masculin
+						</label>
+						<label>
+							<input type="radio" name="radio" value="Femme"> Féminin
+						</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="Origine">Origine des étudiants</label>
+					<select id="Origine" name="etudes" class="form-control">
+						<option value="TC">TC de l'UTT</option>
+						<option value="DUT-INF">DUT info</option>
+						<option value="DUT-GE2I">DUT GE2I</option>
+						<option value="DUT-STID">DUT STID</option>
+						<option value="DUT-AUTRE">DUT autre</option>
+						<option value="PREPA-SCI">Prépa scientifique</option>
+						<option value="PREPA-BL">Prépa B/L</option>
+					</select>
+				</div>
+				
+				<div class="form-group">
+					<label for="valid">Validations ?</label>
+				</div>
+				<div class="form-group">
+					<label for="valid" class="control-label">
+						<input type="checkbox" name="ST07" checked="checked">
+						ST07
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="valid" class="control-label">
+						<input name="ST09" type="checkbox">
+						ST09
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="valid" class="control-label">
+						<input name="ST10" type="checkbox" disabled>
+						ST10 (désactivé)
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="valid" class="control-label">
+						<input name="SE" type="checkbox">
+						SE
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="Modules">Modules ?</label>
+					<select name="modules[]" class="form-control" multiple size="9">
+						<optgroup label="CS">
+							<option selected name="GL02">GL02</option>
+							<option selected name="NF16">NF16</option>
+							<option name="NF20">NF20</option>
+						</optgroup>
+						<optgroup label="TM">
+							<option name="IF09">IF09</option>
+							<option selected name="IF14">IF14</option>
+							<option name="LO02">LO02</option>
+							<option selected name="NF21">NF21</option>
+						</optgroup>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="info">Informations complémentaires</label>
+					<textarea name="InfoComp" id="info" class="form-control" >Ecrivez ici.</textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit form</button>
+		</div>
+	</div>
+	</form>
+</div>
+</body>
+</html>
