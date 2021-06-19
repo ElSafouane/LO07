@@ -1,0 +1,15 @@
+body{
+    background: lemonchiffon;
+}
+.panel-title{
+    font-weight: bold;
+}
+
+hr{
+    font-weight: bold;
+}
+
+.jumbotron{
+    background: #efc0fe;
+    margin-top: 80px;
+}
