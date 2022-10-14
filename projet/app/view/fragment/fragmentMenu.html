@@ -1,0 +1,75 @@
+
+<!-- ----- début fragmentCaveMenu -->
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="router2.php?action=vaccinAccueil">EL MCHANTEF Safouane & KOUROUMA Idriss</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+           aria-haspopup="true" aria-expanded="false">Gestion des vaccins <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="router2.php?action=vaccinReadAll">Liste des vaccins</a></li>
+          <li><a href="router2.php?action=vaccinCreate&target=vaccinCreated">Ajout d'un vaccin</a></li>
+          <li><a href="router2.php?action=vaccinCreate&target=vaccinUpdate">Mise à jour d'un vaccin</a></li>
+
+        </ul>
+      </li>   
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+           aria-haspopup="true" aria-expanded="false">Gestion des centres<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
+          <li><a href="router2.php?action=centreCreate">Ajout d'un centre</a></li>
+          <li><a href="router2.php?action=centreReadAll">Liste des centre</a></li>
+
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+           aria-haspopup="true" aria-expanded="false">Gestion des patients <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="router2.php?action=patientCreate">Ajout d'un patient</a></li>
+          <li><a href="router2.php?action=patientReadAll">Liste des patients</a></li>
+        </ul>
+      </li>
+  
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestion des stocks<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="router2.php?action=stockReadAll">Liste des centres avec le nombre de doses de chaque vaccin</a></li>
+          <li><a href="router2.php?action=stockGlobal">Nombre global de doses des centres</a></li>
+          <li><a href="router2.php?action=stockRead">Attribution de vaccins pour un centre</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestion des rendez-vous<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="router2.php?action=rdvRead">Dossier de vaccination d'un patient</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mes innovations<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="router2.php?action=patientNonVacc">Selection des patients non vaccinés</a></li>
+          <li><a href="router2.php?action=innovationGetAll">Mis à jour d'un patient</a></li>
+          <li><a href="router2.php?action=innovationVacc">Nombre de patient par vaccin </a></li>
+        </ul>
+      </li>
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Documentation<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li><a href="router2.php?action=documentation1">Documentation innovation 1</a></li>
+				<li><a href="router2.php?action=documentation2">Documentation innovation 2</a></li>
+				<li><a href="router2.php?action=documentation3">Documentation innovation 3</a></li>
+				<li><a href="router2.php?action=pointdevue">Votre point de vue global sur ce projet</a></li>
+			</ul>
+		</li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ----- fin fragmentCaveMenu -->
+
